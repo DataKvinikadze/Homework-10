@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  display: block;
+}
+
+section {
+  display: block;
+}
+
+body {
+  background-color: #0d0714;
+  font-family: "Inter", sans-serif;
+}
+
+#page {
+  max-width: 1440px;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+#page .task {
+  max-width: 432px;
+  height: 483px;
+  margin: 159px auto auto;
+}
+
+/* Value section: */
+
+#page .task #value {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+
+#page .task #value #input {
+  width: 381px;
+  height: 40px;
+  padding-left: 15px;
+}
+
+#page .task #value #main_btn {
+  width: 40px;
+  height: 40px;
+}
+
+/* styling Value Section: */
+
+#page .task #value #input {
+  background-color: #0d0714;
+  border: 1px solid #3e1671;
+  border-radius: 10px;
+}
+
+#page .task #value button {
+  background-color: #9e78cf;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 10px;
+}
+
+/* list Section: */
+
+#page .task #list .list li {
+  height: 75px;
+  padding: 21px 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#page .task #list h1 {
+  margin-bottom: 17px;
+}
+
+#page .task #list .list li .done_delete {
+  width: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* styling list Section: */
+#page .task #list h1 {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+#page .task #list .list li span {
+  font-size: 16px;
+  color: #9e78cf;
+}
