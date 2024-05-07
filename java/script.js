@@ -47,9 +47,12 @@ btn.addEventListener("click", function () {
     list_item.remove();
 
     // Counter
-    x--;
-    console.log(x);
-    amount.textContent = `Task to do: ${x}`;
+    if (listContent.classList.contains("done")) {
+      amount.textContent = `Task to do: ${x}`;
+    } else {
+      x--;
+      amount.textContent = `Task to do: ${x}`;
+    }
   });
 
   btn1.addEventListener("click", function () {
@@ -66,8 +69,6 @@ btn.addEventListener("click", function () {
       amount.textContent = `Task to do: ${x}`;
     }
   });
-
-  // Erti ragac ver gavige, magalitad roca vawer shesrulebis gilaks da shemdgom nagvis gilaks amount akldeba 2jer, kodi mase mushaobs da ise rogor unda davwero ro magalitad tu ukve shesrulebulzea dawerili da shemdeg davawert nagavs mashin 1 daematos da ara zedmeti 1 daakldes.
 
   input.value = "";
 });
